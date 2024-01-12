@@ -18,14 +18,14 @@ let candidateAnswers;
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-let candidateName = input.question("What is your name?");
+candidateName = input.question("What is your name? ");
 
 }
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
   //usimg the question variable, display question and prompt answer"
-candidateAnswer = input.question("question" + ":" + " " )
+candidateAnswer = input.question(question + ":" + " " )
 }
 
 function gradeQuiz(candidateAnswers) {
@@ -47,7 +47,7 @@ function gradeQuiz(candidateAnswers) {
 function runProgram() {
   askForName();
   // TODO 1.1c: Greet candidate using their name //
-   console.log("Hi" + candidateName + "!");
+   console.log("Hi " + candidateName + "!");
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
